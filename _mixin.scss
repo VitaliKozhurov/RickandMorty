@@ -1,0 +1,114 @@
+@mixin grid() {
+   @media screen and (max-width:992px) {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   @media screen and (max-width:678px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   @media screen and (max-width:420px) {
+      grid-template-columns: 1fr;
+   }
+}
+
+@mixin card_name_fz() {
+   @media screen and (max-width:576px) {
+      font-size: 16px;
+   }
+}
+
+@mixin card_transform() {
+   @media screen and (max-width:992px) {
+      transform: translateY(-30px);
+   }
+}
+
+@mixin to_up() {
+   @media screen and (max-width:576px) {
+      bottom: 20px;
+      width: 40px;
+      height: 40px;
+   }
+}
+
+@mixin modal_info_flex() {
+   @media screen and (max-width:678px) {
+      width: 90%;
+   }
+
+   @media screen and (max-width:576px) {
+      width: 60%;
+      flex-direction: column;
+   }
+}
+
+@mixin modal_info_grid() {
+   @media screen and (max-width:992px) {
+      grid-template-columns: 1fr;
+   }
+
+   @media screen and (max-width:576px) {
+      padding: 10px;
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@mixin modal_info_text() {
+   @media screen and (max-width:992px) {
+      margin: 15px 0;
+   }
+
+   @media screen and (max-width:678px) {
+      margin: 5px 0;
+      font-size: 16px;
+   }
+
+   @media screen and (max-width:420px) {
+      font-size: 14px;
+   }
+}
+
+@mixin modal_info_header() {
+   @media screen and (max-width:576px) {
+      font-size: 20px;
+   }
+
+   @media screen and (max-width:420px) {
+      font-size: 18px;
+   }
+}
+
+@mixin modal_img() {
+   @media screen and (max-width:992px) {
+      flex: 0 1 70%;
+   }
+}
+
+@mixin pagination() {
+   @media screen and (max-width:576px) {
+      width: 35px;
+      height: 35px;
+      margin: 0;
+   }
+}
+
+@mixin pagination_size_li() {
+   @media screen and (max-width:420px) {
+      font-size: 14px;
+   }
+}
+
+@mixin pagination_padding_li() {
+   @media screen and (max-width:420px) {
+      padding: 0 10px;
+   }
+}
+
+
+@mixin switch_span() {
+   @media screen and (max-width:576px) {
+      font-size: 18px;
+      text-align: center;
+   }
+}

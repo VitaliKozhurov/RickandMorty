@@ -1,0 +1,69 @@
+@import '_nullstyle.scss';
+@import '_index.scss';
+@import '_mixin.scss';
+
+.card-list {
+   @include grid;
+
+   .card-body p {
+      @include card_name_fz
+   }
+
+   .card {
+      @include card_transform
+   }
+}
+
+.toTop.active {
+   @include to_up
+}
+
+.modal-wrapper .modal-body {
+   @include modal_info_flex;
+
+   .modal-img {
+      @include modal_img
+   }
+
+   .info-container {
+
+      .modal-info {
+         @include modal_info_grid;
+
+         .info-item {
+            .item-text {
+               @include modal_info_text
+            }
+
+            .item-header {
+               @include modal_info_header()
+            }
+         }
+
+      }
+   }
+
+}
+
+.pagination {
+   ul {
+      li {
+         @include pagination_size_li;
+
+         &.numb {
+            @include pagination
+         }
+
+         &.prev,
+         &.next {
+            @include pagination_padding_li
+         }
+      }
+   }
+}
+
+.switch-container {
+   span {
+      @include switch_span
+   }
+}
